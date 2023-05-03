@@ -221,7 +221,7 @@ const Home = () => {
                 </TourImg>
 
             </TourSection>
-            <Gallery />
+
 
 
         </>
