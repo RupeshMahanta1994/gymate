@@ -147,6 +147,10 @@ const ContactForm = styled.div`
     border: none;
     outline: none;
     border-radius: 0.2rem;
+
+    &::placeholder{
+        font-family: "Roboto",sans-serif;
+    }
     @media (min-width: 480px){
         font-size: 1rem;
     }
@@ -245,8 +249,13 @@ function Contact() {
                     <input type="text" placeholder='Full Name*' />
                     <input type="text" placeholder='Email Address*' />
                     <select>
-                        <option value="someOption">Select Class</option>
-                        <option value="otherOption">Other option</option>
+                        <option value="someOption">Select Option</option>
+                        <option value="someOption">Cycling</option>
+                        <option value="otherOption">Meditation</option>
+                        <option value="otherOption">Boxing</option>
+                        <option value="otherOption">Karate</option>
+                        <option value="otherOption">Power Lifting</option>
+                        <option value="otherOption">Workout</option>
                     </select>
                     <textarea name="" id="" cols="30" rows="5" placeholder='Comment'></textarea>
                     <Button>

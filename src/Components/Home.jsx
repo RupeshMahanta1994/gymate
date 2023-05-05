@@ -61,6 +61,7 @@ const Button = styled.div`
 display: inline-block;
 position: relative;
 margin: 3em 0;
+cursor: pointer;
 & .hover {
     height: 100%;
     width: 100%;

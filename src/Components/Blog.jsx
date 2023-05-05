@@ -184,6 +184,7 @@ const Button = styled.div`
 display: inline-block;
 position: relative;
 margin-top:3em;
+cursor: pointer;
 & .hover {
     height: 100%;
     width: 100%;

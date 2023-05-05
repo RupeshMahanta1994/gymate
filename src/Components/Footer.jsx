@@ -130,6 +130,7 @@ function Footer() {
     return (
         <Container>
             <Left>
+
                 <NavLogo>
                     <img src={logo} alt="" />
                     <div className="LogoText">
@@ -137,6 +138,7 @@ function Footer() {
                         <p>ultimate gym center</p>
                     </div>
                 </NavLogo>
+
                 <p>
                     Take your health and
                     body to the next level<br></br>

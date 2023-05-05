@@ -120,7 +120,7 @@ function Schedule() {
 
     return (
         <>
-            <Backdrop heading={'Shedule By Day'} />
+            <Backdrop heading={'Shedule'} />
             <Container>
                 <WorkinDays>
                     {
@@ -151,9 +151,9 @@ function Schedule() {
                                             <p>trainer</p>
                                             <h3>{item.trainer}</h3>
                                         </div>
-                                        <Link to="/contact">
-                                            <div className="Item">
-                                                <button>join now</button>
+                                        <Link to="/contact" >
+                                            <div className="Item" >
+                                                <button style={{ cursor: "pointer" }}>join now</button>
                                             </div>
                                         </Link>
                                     </DurarationItem>

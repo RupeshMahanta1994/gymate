@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import Backdrop from './Backdrop'
 import { PersonOutlineOutlined, AccessTimeOutlined } from '@mui/icons-material';
 import { ClassDetails } from './data'
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     
@@ -91,6 +92,7 @@ const Button = styled.div`
 display: inline-block;
 position: relative;
 margin: 3em 0;
+cursor: pointer;
 & .hover {
     height: 100%;
     width: 100%;
@@ -135,10 +137,12 @@ const Classes = () => {
                                         <p><PersonOutlineOutlined /> {item.trainer}</p>
                                         <p><AccessTimeOutlined /> {item.time}</p>
                                     </div>
-                                    <Button>
-                                        <div className="hover"></div>
-                                        <button>Join now</button>
-                                    </Button>
+                                    <Link to="/contact">
+                                        <Button>
+                                            <div className="hover"></div>
+                                            <button>Join now</button>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </ImgContainer>
                         )

@@ -2,6 +2,10 @@ import React from 'react'
 import Backdrop from './Backdrop'
 import styled from '@emotion/styled'
 import one from "../assets/2.jpg"
+import two from "../assets/1.jpg"
+import three from "../assets/2.jpg"
+import { Link } from 'react-router-dom'
+
 
 const Container = styled.div`
     width: 100%;
@@ -135,6 +139,7 @@ const Button = styled.div`
 display: inline-block;
 position: relative;
 margin: 3em 0;
+cursor: pointer;
 & .hover {
     height: 100%;
     width: 100%;
@@ -197,17 +202,19 @@ const Pricing = () => {
                                 cycling
                             </p>
 
-                            <Button>
-                                <div className="hover"></div>
-                                <button>puchase now</button>
-                            </Button>
+                            <Link to="/contact">
+                                <Button>
+                                    <div className="hover"></div>
+                                    <button>puchase now</button>
+                                </Button>
+                            </Link>
                         </div>
 
 
                     </CardItem>
 
                     <CardItem>
-                        <img src={one} alt="" />
+                        <img src={two} alt="" />
                         <div className="text">
                             <h5>beginners</h5>
                             <h2>39</h2>
@@ -225,17 +232,19 @@ const Pricing = () => {
                                 cycling
                             </p>
 
-                            <Button>
-                                <div className="hover"></div>
-                                <button>puchase now</button>
-                            </Button>
+                            <Link to="/contact">
+                                <Button>
+                                    <div className="hover"></div>
+                                    <button>puchase now</button>
+                                </Button>
+                            </Link>
                         </div>
 
 
                     </CardItem>
 
                     <CardItem>
-                        <img src={one} alt="" />
+                        <img src={three} alt="" />
                         <div className="text">
                             <h5>beginners</h5>
                             <h2>39</h2>
@@ -253,17 +262,19 @@ const Pricing = () => {
                                 cycling
                             </p>
 
-                            <Button>
-                                <div className="hover"></div>
-                                <button>puchase now</button>
-                            </Button>
+                            <Link to="/contact">
+                                <Button>
+                                    <div className="hover"></div>
+                                    <button>puchase now</button>
+                                </Button>
+                            </Link>
                         </div>
 
 
                     </CardItem>
                 </PriceCards>
 
-            </Container>
+            </Container >
 
         </>
     )

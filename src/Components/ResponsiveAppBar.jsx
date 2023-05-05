@@ -149,6 +149,7 @@ border: 1px solid #fff;
 padding: 0.3em;
 padding-right: 0.8em;
 text-transform: uppercase;
+cursor: pointer;
 
 & p {
     font-size: 0.9rem;
@@ -180,13 +181,18 @@ const ResponsiveAppBar = () => {
     return (
         <>
             <Navbar>
-                <NavLogo>
-                    <img src={logo} alt="" />
-                    <div className="LogoText">
-                        <h1>Gymate</h1>
-                        <p>ultimate gym center</p>
-                    </div>
-                </NavLogo>
+                <Link to="/" style={{ textDecoration: "none", color: "#FFF", cursor: "pointer" }}>
+                    <NavLogo to="/">
+                        <img src={logo} alt="" />
+                        <div className="LogoText">
+                            <h1>Gymate</h1>
+                            <p>ultimate gym center</p>
+                        </div>
+                    </NavLogo>
+
+                </Link>
+
+
 
 
                 {
@@ -226,14 +232,16 @@ const ResponsiveAppBar = () => {
                     <div className="mobileMenu">
                         <Menu onClick={() => { navBarHandler(!navBar) }} />
                     </div>
-                    <NavLink to="/signup"> <PersonOutline style={{ fontSize: '2.1rem' }} /></NavLink>
-                    <List onClick={() => setSideBar(!sideBar)} style={{ fontSize: '2.1rem' }} />
-                    <Button>
-                        <AddBox style={{ color: '#ff0336', fontSize: '2.5rem' }} />
-                        <p >
-                            join class now
-                        </p>
-                    </Button>
+                    <Link to="/signup" style={{ textDecoration: "none", color: "#fff", cursor: "pointer" }}> <PersonOutline style={{ fontSize: '2.1rem' }} /></Link>
+                    <List onClick={() => setSideBar(!sideBar)} style={{ fontSize: '2.1rem', cursor: "pointer" }} />
+                    <Link to="contact" style={{ textDecoration: "none", color: "#fff" }}>
+                        <Button>
+                            <AddBox style={{ color: '#ff0336', fontSize: '2.5rem' }} />
+                            <p >
+                                join class now
+                            </p>
+                        </Button>
+                    </Link>
 
                 </NavBtn>
             </Navbar >
