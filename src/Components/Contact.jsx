@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import Backdrop from './Backdrop'
 import { FacebookOutlined, GitHub } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 
 
@@ -179,6 +180,7 @@ justify-content: center;
     z-index: 10;
     background: red;
     color: #fff;
+    cursor: pointer;
     @media (min-width: 480px){
         font-size: 0.9rem;
     }
@@ -186,6 +188,10 @@ justify-content: center;
 
     
 }
+`
+const NavLink = styled(Link)`
+text-decoration: none;
+    
 `
 
 function Contact() {
@@ -258,10 +264,13 @@ function Contact() {
                         <option value="otherOption">Workout</option>
                     </select>
                     <textarea name="" id="" cols="30" rows="5" placeholder='Comment'></textarea>
-                    <Button>
-                        <div className="hover"></div>
-                        <button>submit now</button>
-                    </Button>
+                    <NavLink to="/">
+                        <Button>
+                            <div className="hover"></div>
+                            <button>submit now</button>
+                        </Button>
+                    </NavLink>
+
                 </ContactForm>
 
 

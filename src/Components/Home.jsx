@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled"
 import tourImg from '../assets/tourImg.png'
 import Gallery from './Gallery'
+import { Link } from 'react-router-dom'
 
 const HeroSection = styled.div`
     
@@ -182,11 +183,13 @@ const Home = () => {
                 <p>
                     fit & perfect
                 </p>
+                <Link to="contact">
+                    <Button>
+                        <div className="hover" ></div>
+                        <button>Join now</button>
+                    </Button>
+                </Link>
 
-                <Button>
-                    <div className="hover" ></div>
-                    <button>Join now</button>
-                </Button>
 
             </HeroSection>
 
@@ -210,11 +213,13 @@ const Home = () => {
                     <Facilities>
 
                     </Facilities>
+                    <Link to="classes">
+                        <Button>
+                            <div className="hover"></div>
+                            <button>TAKE A TOUR</button>
+                        </Button>
+                    </Link>
 
-                    <Button>
-                        <div className="hover"></div>
-                        <button>TAKE A TOUR</button>
-                    </Button>
                 </TourText>
 
                 <TourImg>

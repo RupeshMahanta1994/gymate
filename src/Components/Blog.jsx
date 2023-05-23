@@ -2,7 +2,16 @@ import React from 'react'
 import styled from '@emotion/styled'
 import Backdrop from './Backdrop'
 import LayersIcon from '@mui/icons-material/Layers';
-import one from "../assets/2.jpg"
+import one from "../assets/Gallery/5.jpg"
+import two from "../assets/Gallery/3.jpg"
+import three from "../assets/Gallery/2.jpg"
+import four from "../assets/Gallery/4.jpg"
+import { Link } from 'react-router-dom';
+
+
+const NavLink = styled(Link)`
+    text-decoration: none;
+`
 
 const Container = styled.div`
 width: 100%;
@@ -281,14 +290,16 @@ function Blog() {
                             innovation rather than backend supply.
                             when an unknown printer took a galley.
                         </p>
-                        <Button>
-                            <div className="hover"></div>
-                            <button>purchase now</button>
-                        </Button>
+                        <NavLink to="/contact">
+                            <Button>
+                                <div className="hover"></div>
+                                <button>purchase now</button>
+                            </Button>
+                        </NavLink>
                     </SinglePost>
 
                     <SinglePost>
-                        <img src={one} alt="" />
+                        <img src={two} alt="" />
                         <div className="UserDetails">
                             <LayersIcon />
                             <p>
@@ -303,7 +314,7 @@ function Blog() {
                             </p>
                         </div>
 
-                        <h2>yoga for everyone in 2022</h2>
+                        <h2>Getting Back Into CrossFit After Vacation</h2>
 
                         <p>
                             Authoritatively disseminate multimedia
@@ -314,14 +325,17 @@ function Blog() {
                             innovation rather than backend supply.
                             when an unknown printer took a galley.
                         </p>
-                        <Button>
-                            <div className="hover"></div>
-                            <button>purchase now</button>
-                        </Button>
+                        <NavLink to="/contact">
+                            <Button>
+                                <div className="hover"></div>
+                                <button>purchase now</button>
+                            </Button>
+                        </NavLink>
+
                     </SinglePost>
 
                     <SinglePost>
-                        <img src={one} alt="" />
+                        <img src={three} alt="" />
                         <div className="UserDetails">
                             <LayersIcon />
                             <p>
@@ -336,7 +350,7 @@ function Blog() {
                             </p>
                         </div>
 
-                        <h2>yoga for everyone in 2022</h2>
+                        <h2>Meet Fitness Ambassador Gary</h2>
 
                         <p>
                             Authoritatively disseminate multimedia
@@ -347,14 +361,16 @@ function Blog() {
                             innovation rather than backend supply.
                             when an unknown printer took a galley.
                         </p>
-                        <Button>
-                            <div className="hover"></div>
-                            <button>purchase now</button>
-                        </Button>
+                        <NavLink to="/contact">
+                            <Button>
+                                <div className="hover"></div>
+                                <button>purchase now</button>
+                            </Button>
+                        </NavLink>
                     </SinglePost>
 
                     <SinglePost>
-                        <img src={one} alt="" />
+                        <img src={four} alt="" />
                         <div className="UserDetails">
                             <LayersIcon />
                             <p>
@@ -369,7 +385,7 @@ function Blog() {
                             </p>
                         </div>
 
-                        <h2>yoga for everyone in 2022</h2>
+                        <h2>The Best are European Materls Direct</h2>
 
                         <p>
                             Authoritatively disseminate multimedia
@@ -380,10 +396,12 @@ function Blog() {
                             innovation rather than backend supply.
                             when an unknown printer took a galley.
                         </p>
-                        <Button>
-                            <div className="hover"></div>
-                            <button>purchase now</button>
-                        </Button>
+                        <NavLink to="/contact">
+                            <Button>
+                                <div className="hover"></div>
+                                <button>purchase now</button>
+                            </Button>
+                        </NavLink>
                     </SinglePost>
 
 
@@ -402,18 +420,18 @@ function Blog() {
                         </RecentPostsItem>
 
                         <RecentPostsItem>
-                            <img src={one} alt="" />
+                            <img src={two} alt="" />
                             <div className="Title">
                                 <p>march 22, 2022</p>
-                                <h4>yoga for everyone in 2022</h4>
+                                <h4>Getting Back Into CrossFit After Vacation</h4>
                             </div>
                         </RecentPostsItem>
 
                         <RecentPostsItem>
-                            <img src={one} alt="" />
+                            <img src={three} alt="" />
                             <div className="Title">
                                 <p>march 22, 2022</p>
-                                <h4>yoga for <br /> everyone in 2022</h4>
+                                <h4>Meet Fitness Ambassador Gary</h4>
                             </div>
                         </RecentPostsItem>
 

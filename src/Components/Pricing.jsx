@@ -36,7 +36,7 @@ justify-content: center;
             background: red;
             color: #fff;
             padding: 0.5em 1em;
-            border-top-right-radius: 0.5rem;
+            border-radius: 0.5rem;
         }
 
         & h2 {
@@ -97,6 +97,9 @@ position: relative;
 & h5 {      font-size: 1rem;
             text-transform: capitalize;
             letter-spacing: 0.1rem;
+            &:hover{
+                color: red;
+            }
         }
 
         & h2 {
